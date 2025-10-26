@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Carrinho | Mayza Calçados</title>
+    <title>Entrar / Cadastrar | Mayza Calçados</title>
 
     <link rel="icon" href="Logo Loja Mayza.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="Código Css/ProjetoWeb.css" />
+    <link rel="stylesheet" href="Styles/ProjetoWeb.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -32,7 +32,7 @@
               </a>
             </li>
             <li>
-              <a href="login.html"> <i class="fas fa-user"></i> Login </a>
+              <a href="Login.html"> <i class="fas fa-user"></i> Login </a>
             </li>
           </ul>
         </nav>
@@ -40,35 +40,35 @@
     </header>
 
     <main>
-      <section id="shopping-cart" class="page-section">
+      <section id="login-form" class="page-section">
         <div class="container">
-          <h2>Seu Carrinho de Compras</h2>
+          <div class="login-card">
+            <h2>Acesse sua Conta</h2>
+            <form id="login-form-content">
+              <div class="input-group">
+                <label for="email"
+                  ><i class="fas fa-envelope"></i> E-mail:</label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
 
-          <div id="cart-items-container">
-            <p id="empty-cart-message" class="text-center">
-              Seu carrinho está vazio.
-            </p>
-          </div>
+              <div class="input-group">
+                <label for="password"><i class="fas fa-lock"></i> Senha:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
 
-          <div id="cart-summary">
-            <div class="summary-line">
-              <span>Subtotal:</span>
-              <span id="cart-subtotal">R$ 0,00</span>
-            </div>
-            <div class="summary-line total">
-              <span>Total:</span>
-              <span id="cart-total">R$ 0,00</span>
-            </div>
-          </div>
+              <button type="submit" class="btn btn-add-to-cart btn-large">
+                Entrar
+              </button>
 
-          <div class="checkout-button-container">
-            <button
-              id="btn-checkout"
-              class="btn btn-add-to-cart btn-large"
-              disabled
-            >
-              <i class="fas fa-money-check-alt"></i> Finalizar Compra
-            </button>
+              <p class="separator">ou</p>
+
+              <a href="#" class="btn btn-register"> Criar Nova Conta </a>
+
+              <p class="forgot-password">
+                <a href="#">Esqueci minha senha</a>
+              </p>
+            </form>
           </div>
         </div>
       </section>
@@ -111,6 +111,6 @@
       </div>
     </footer>
 
-    <script src="Código JavaScript/ProjetoWeb.js"></script>
+    <script src="Script/ProjetoWeb.js"></script>
   </body>
 </html>
