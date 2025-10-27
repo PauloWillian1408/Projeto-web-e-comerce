@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // --------------------------------------------------------------------
+
     // FUNÇÕES BÁSICAS DO CARRINHO (Usadas em todas as páginas)
-    // --------------------------------------------------------------------
 
     // Função para obter o carrinho do localStorage ou retornar um array vazio
     function getCart() {
@@ -85,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         emptyMessage.style.display = 'none';
         btnCheckout.disabled = false;
 
-        // -------------------------------------------------------------------
 
         // 2. Itera sobre os itens do carrinho e cria o HTML
         cart.forEach(item => {
@@ -116,11 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
         totalElement.textContent = `R$ ${totalFormatado}`;
     }
 
-    // --------------------------------------------------------------------
     // INICIALIZAÇÃO DO SITE
-    // --------------------------------------------------------------------
 
-    // Ouve cliques nos botões "Adicionar ao Carrinho" (Seu código original)
+    // Ouve cliques nos botões "Adicionar ao Carrinho"
     const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
 
     addToCartButtons.forEach((button) => {
@@ -131,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const productName = card.getAttribute("data-name");
             const productPriceText = card.querySelector(".product-price").textContent;
             
-            // NOVO: Tentativa de pegar a URL da imagem (opcional, dependendo do seu HTML)
+            // Tentativa de pegar a URL da imagem (opcional, dependendo do seu HTML)
             const productImage = card.getAttribute("data-image");
 
             // Limpa o texto do preço
@@ -159,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     
-    // NOVO: Chama a função de renderizar se for a página do carrinho
+    // Chama a função de renderizar se for a página do carrinho
     if (document.getElementById("shopping-cart")) {
         renderCart();
     }
@@ -167,9 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Inicia a contagem do carrinho ao carregar a página
     updateCartCount(getCart().length);
 
-    // --------------------------------------------------------------------
     // LÓGICA DA GALERIA (Mantida inalterada)
-    // --------------------------------------------------------------------
+
 
     function setupProductGallery(gallery) {
         const images = gallery.querySelectorAll(".product-image");

@@ -1,0 +1,22 @@
+{
+    "catalogo": [
+        {"id": 1, "categoria": "Plataforma Artesanal", "link": "PlataformaArtesanal.html"},
+        {"id": 2, "categoria": "Plataforma Blogueira", "link": "PlataformaBlogueira.html"},
+        {"id": 3, "categoria": "Plataforma Luxo", "link": "PlataformaLuxo.html"},
+        {"id": 4, "categoria": "Papetes Ana Bella", "link": "PapetesAnaBella.html"},
+        {"id": 5, "categoria": "Papetes Redonda", "link": "PapetesRedonda.html"},
+        {"id": 6, "categoria": "Papetes Pranch", "link": "PapetesPranch.html"},
+        {"id": 7, "categoria": "Papetes Flat", "link": "PapetesFlat.html"},
+        {"id": 8, "categoria": "Papetes Traturadoras", "link": "PapetesTraturadoras.html"},
+        {"id": 9, "categoria": "Papetes Glamour Luxo", "link": "PapetesGlamourLuxo.html"},
+        {"id": 10, "categoria": "Papetes Canoa", "link": "PapetesCanoa.html"},
+        {"id": 11, "categoria": "Papetes Pop Baixa", "link": "PapetesPopBaixa.html"},
+        {"id": 12, "categoria": "Papetes New Baixa", "link": "PapetesNewBaixa.html"},
+        {"id": 13, "categoria": "Saltos Cristal", "link": "SaltosCristal.html"},
+        {"id": 14, "categoria": "Saltos Fino", "link": "SaltosFino.html"},
+        {"id": 15, "categoria": "Saltos Taça", "link": "SaltosTaça.html"},
+        {"id": 16, "categoria": "Saltos Tábua", "link": "SaltosTábua.html"},
+        {"id": 17, "categoria": "Saltos Griff", "link": "SaltosGriif.html"},
+        {"id": 18, "categoria": "Saltos Gringa", "link": "SaltosGringa.html"}
+    ]
+}
