@@ -1,6 +1,7 @@
 
 async function produtoCard() {
-    const api = "../Html/json/produtoCard.json"
+
+    const api = "../Html/json/produtoCard.json" 
 
     const listaProdutos = document.getElementById("product-cards")
 
@@ -12,24 +13,26 @@ async function produtoCard() {
         }
 
         return response.json()
-    }).then(data => {   
+    }).then(data => {   
         const produtos = data.produtos
 
         listaProdutos.innerHTML = ''
 
         produtos.forEach(produto => {
+
             const precoFormato = `R$ ${produto.preco.toFixed(2).replace('.', ',')}`
 
             const cardProduto = `
                 <div
                     class="product-card"
                     data-id="${produto.id}"
-                    data-name="Plataforma Artesanal N° 1"
+                    data-name="${produto.nome}" 
+                    data-image="${produto.imagem}" 
                 >
                     <div class="product-image-container">
                         <img
                             src="${produto.imagem}"
-                            alt="Plataforma Artesanal Produto 1"
+                            alt="${produto.nome}"
                             class="grid-image"
                         />
                     </div>

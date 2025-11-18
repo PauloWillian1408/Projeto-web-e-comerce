@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap");
+
+/*Variáveis CSS (Configurações Globais)*/
+:root {
+  --primary-color: #ff69b4; /* Rosa Choque */
+  --secondary-color: #333; /* Preto/Cinza Escuro para texto */
+  --text-color: #555;
+  --light-gray: #f4f4f4;
+  --white: #fff;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+
+  --action-color: var(--primary-color);
+  --shadow-soft: rgba(0, 0, 0, 0.1);
+}
+
+/*Reset Básico (Elementos universais e body)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
