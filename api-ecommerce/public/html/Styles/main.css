@@ -1,0 +1,11 @@
+/*Base (Variáveis, Reset, Tipografia)*/
+@import "base.css";
+/*Componentes (Botões, Cards, Elementos Reutilizáveis)*/
+@import "components.css";
+/*Estrutura/Layout (Header, Footer, Seções Gerais)*/
+@import "layout.css";
+/*Páginas Específicas (login, Carrinho)*/
+@import "login.css";
+@import "cart.css";
+/*Responsividade (Media Queries)*/
+@import "responsividade.css";

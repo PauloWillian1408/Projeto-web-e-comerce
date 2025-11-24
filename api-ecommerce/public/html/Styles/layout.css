@@ -1,0 +1,194 @@
+/* HEADER */
+
+header {
+  background-color: var(--white);
+  padding: 15px 0;
+  box-shadow: 0 2px 8px var(--shadow-soft);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 90px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header nav a:hover {
+  color: var(--primary-color);
+}
+
+header nav .fas {
+  font-size: 1.1em;
+}
+
+/* SEÇÕES GENÉRICAS */
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-section {
+  padding: 60px 0;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO SECTION (Seção de Destaque) */
+
+.hero-section {
+  background: linear-gradient(
+      rgba(255, 105, 180, 0.7),
+      rgba(255, 105, 180, 0.5)
+    ),
+    url("https://via.placeholder.com/1500x500/ff69b4/ffffff?text=Mayza+Calçados")
+      no-repeat center center/cover;
+  background-attachment: fixed;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--white);
+}
+
+.hero-section p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+
+.category-links-section {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.category-links-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.category-links-wrapper li {
+  list-style-type: none;
+}
+
+.product-grid {
+  background-color: var(--light-gray);
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-section {
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 40px 0 20px;
+  font-size: 0.9em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 20px;
+}
